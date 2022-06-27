@@ -1,0 +1,210 @@
+*{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+.hide{
+     display: none;
+}
+
+body{
+     width: 100%;
+     height: 100vh;
+}
+
+.lines{
+     width: 10px;
+     height: 100px;
+     background-color: #fff;
+     position: absolute;
+     margin-left: 295px;
+}
+
+.gameArea{
+     overflow: hidden;
+     transform: rotateX(30deg);
+     position: relative;
+     width: 600px;
+     height: 100vh;
+     background-color: #2d3436;
+     margin: auto;
+     transform:translateY(-130px) rotateX(30deg) scaleY(1.242);
+
+}
+
+
+.startScreen{
+     position: absolute;
+     background-color: #ee5253;
+     left: 35%;
+     top: 40%;
+     transform: translate(-50%,-50%);
+     color: #fff;
+     z-index: 1;
+     text-align:center;
+     border:1px solid #ff6b6b;
+     padding: 15px;
+     margin: auto;
+     width: 30%;
+     cursor: pointer;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 20px;
+     word-spacing: 3;
+     line-height: 30px;
+     text-transform: uppercase;
+     box-shadow: 0 5px 5px #777;
+     transform: translateZ(240px) rotateX(-15deg);
+
+}
+
+/********** car element *************/
+.car{
+     transform: rotateZ(180deg);
+     scale: 2;
+     background-image: url('./modi.png');
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     width: 75px;
+     border-radius: 30%;
+     border-top-right-radius: 100%;
+     height: 60px;
+     /* border: 2px solid red; */
+     position: absolute;
+     top: 500px;
+     left: 300px;
+
+}
+
+.carGame{
+     transform-style: preserve-3d;
+     perspective: 700px;
+}
+
+.enemy{
+     /* border: 2px solid red; */
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+    border-radius: 50%;
+     width: 60px;
+     height: 60px;
+     position: absolute;
+     top: 500px;
+     left: 300px;
+     
+}
+
+
+/**************** control element *****************/
+
+#new_game{
+     text-align: center;
+     position: absolute;
+     top: 10px;
+     left: 40px;
+     background-color: #4a518b;
+     width: 300px;
+     /* height: 70px; */
+     color: #fff;
+     font-size: 1.5rem;
+     box-shadow: 0 5px 5px #777;
+     line-height: 70px;
+}
+#new_game:hover{
+     background-color: #545fb3;
+}
+
+
+
+.score{
+     text-align: center;
+     position: absolute;
+     top: 170px;
+     left: 40px;
+     background-color: #4a518b;
+     width: 300px;
+     /* height: 70px; */
+     color: #fff;
+     font-size: 1.5rem;
+     box-shadow: 0 5px 5px #777;
+     line-height: 70px;
+}
+
+
+#High_score{
+     text-align: center;
+     position: absolute;
+     top: 250px;
+     left: 40px;
+     background-color: #4a518b;
+     width: 300px;
+     color: #fff;
+     font-size: 1.5rem;
+     box-shadow: 0 5px 5px #777;
+     line-height: 70px;
+}
+
+
+
+#Reset_highScore{
+     text-align: center;
+     position: absolute;
+     top: 330px;
+     left: 40px;
+     background-color: #4a518b;
+     width: 300px;
+     color: #fff;
+     font-size: 1.5rem;
+     box-shadow: 0 5px 5px #777;
+     line-height: 70px;
+}
+#Reset_highScore:hover{
+     background-color: #545fb3;
+}
+
+
+
+#speed_box{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     height: 70px;
+     text-align: center;
+     position: absolute;
+     top: 90px;
+     left: 40px;
+     background-color: #4a518b;
+     width: 300px;
+     color: #fff;
+     font-size: 1.5rem;
+     box-shadow: 0 5px 5px #777;
+     line-height: 70px;
+}
+
+
+
+#Speed{
+     color: white;
+     text-align: center;
+     background-color: #4a518b;
+     width: 100%;
+     height: 70px;
+     font-size: 1.5rem;
+
+}
+#Speed:hover{
+background-color: #545fb3;
+
+}
+::placeholder{
+     color: #c5bbbba6;
+     font-size: 1.2rem;
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
